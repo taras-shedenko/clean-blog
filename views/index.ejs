@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("layouts/header"); -%>
+  <body>
+    <%- include("layouts/navbar"); -%>
+    <!-- Page Header-->
+    <header class="masthead center-content">
+      <h1>Clean Blog</h1>
+    </header>
+    <!-- Main Content-->
+    <main class="posts-list">
+      <form class="search-form center-content">
+        <input type="text" name="search-query" value="<%= searchQuery %>" />
+        <button type="submit">SEARCH</button>
+      </form>
+      <% blogPosts.forEach(({ _id, title, body }) => { %>
+      <article class="post">
+        <header class="title">
+          <a href="/post/<%= _id %>"><h2><%= title %></h2></a>
+        </header>
+        <p class="body"><%= body %></p>
+      </article>
+      <% }) %>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: mediumseagreen;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-link {
+  margin: 1rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: dimgray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.masthead {
+  height: 120px;
+}
+
+.new-post {
+  padding: 0 5%;
+}
+
+.new-post > form > * {
+  display: block;
+}
+
+.new-post > form > label {
+  margin-top: 10px;
+}
+
+.new-post .post-input {
+  width: 50%;
+}
+
+.new-post textarea {
+  height: 80px;
+}
+
+.new-post button {
+  margin-top: 20px;
+}
+
+.posts-list,
+.post-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.posts-list .search-form {
+  margin-bottom: 20px;
+}
+
+.posts-list .search-form input {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.post {
+  margin-top: 20px;
+}
+
+.post .body {
+  margin-top: 10px;
+}
+
+.post .date {
+  margin-top: 10px;
+  font-size: 12px;
+  color: slategray;
+}

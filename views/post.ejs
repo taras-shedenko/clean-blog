@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("layouts/header"); -%>
+  <body>
+    <%- include("layouts/navbar"); -%>
+    <!-- Page Header-->
+    <header class="masthead center-content">
+      <h1>Posts</h1>
+    </header>
+    <main class="post-content">
+      <article class="post">
+        <header class="title">
+          <h2><%= post.title %></h2>
+        </header>
+        <p class="body"><%= post.body %></p>
+        <p class="date">Posted: <%= post.datePosted.toDateString() %></p>
+      </article>
+    </main>
+  </body>
+</html>
